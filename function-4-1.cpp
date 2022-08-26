@@ -12,7 +12,7 @@ int sum_middle_row_column(int **vals, int num_rows, int num_cols){
     for (int j=0; j<num_cols; j++){
       if (i == floor(num_rows/2) || j == floor(num_cols/2)){
         sum = sum + vals[i][j];
-        if (i==j){
+        if (i == floor(num_rows/2) && j == floor(num_cols/2)){
           sum = sum + vals[i][j];
         }
       }
